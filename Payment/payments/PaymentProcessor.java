@@ -1,4 +1,3 @@
-// /payments/PaymentProcessor.java
 package payments;
 
 public class PaymentProcessor {

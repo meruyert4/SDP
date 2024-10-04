@@ -12,7 +12,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Initial wallet amount
-        double walletAmount = 40000.0;
+        double walletAmount = 400000.0;
         List<Double> wallet = new ArrayList<>();
         Random random = new Random();
 
