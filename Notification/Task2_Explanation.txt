@@ -1,0 +1,26 @@
+Task 2:
+You are tasked with developing a notification system that can send notifications via different
+channels: SMS, Email, and Push Notification. Each notification channel has a different
+implementation, but they should follow a unified interface.
+The system should be flexible, allowing you to add new notification types (e.g., Slack
+Notification) without modifying the existing code. Additionally, the system must support
+sending bulk notifications to multiple users via any notification channel.
+1. Design the system following the SOLID principles to ensure it is maintainable and
+extendable.
+2. Implement the solution in Java with at least three notification types:
+o SMSNotification
+o EmailNotification
+o PushNotification
+
+
+Which Solid Principles i added:
+1. Single Responsibility Principle
+2. Open/Closed Principle
+3. Dependency Inversion Principle
+
+HOW TO RUN?
+1. Open Terminal
+2. Navigate to root directory which is SDP
+3. run in terminal: javac -d out Notification/notifications/*.java Notification/main/Main.java
+4. run main: java -cp out main.Main
+5. Done
