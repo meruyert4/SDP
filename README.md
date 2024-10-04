@@ -1,7 +1,7 @@
 # 🧑‍💻✨ Software Design Patterns - Class Assignments
 Welcome to my Software Design Patterns class assignments repository!
 
-1. Application for payment processes
+1. Payment system
 2. Notification system
 
 # 🧩 Why Use Design Patterns?
