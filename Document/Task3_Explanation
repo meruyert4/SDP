@@ -1,15 +1,3 @@
-Task 1:
-You are tasked with building a system that generates different types of documents: PDFs
-and Word files. Each document type has its own creation process. You want to ensure that
-the creation of these documents is flexible and that the system can easily support new
-document types in the future.
-1. Which Creational Design Pattern would be most appropriate for this scenario? Why?
-2. Implement a basic example using this pattern in Java.
-o PDFDocument: Displays the message "PDF Document created."
-o WordDocument: Displays the message "Word Document created."
-Hint: Focus on creating a system where new document types can be added without
-changing the existing code.
-
 What SOLID Principles i used:
 1. Single Responsibility Principle (SRP):
     Each class has one job.
@@ -22,4 +10,8 @@ What SOLID Principles i used:
 
 What Design Patterns i used:
 1. Factory Method Pattern:
-    Creates objects via factories.
+    to create objects
+
+1. Which Creational Design Pattern would be most appropriate for this scenario? Why?
+    The Factory Method pattern is most appropriate because it allows the system to create different types of documents (PDF, Word)
+    without specifying the exact class, making it easy to add new document types in the future.

@@ -1,20 +1,4 @@
-Task 1
-You are building an application that processes payments. The application should be able to
-handle payments through different methods (e.g., credit cards, PayPal, bank transfers).
-Additionally, the payment processing system should support new payment methods without
-changing the existing code.
-1. Apply SOLID principles to design a flexible and maintainable system for handling
-payments.
-2. Implement a Java solution that satisfies the following requirements:
-o There should be at least two payment
-methods: CreditCardPayment and PayPalPayment.
-o You should be able to easily add a new payment method
-(e.g., BankTransferPayment) without modifying the existing code.
-o The system should adhere to the Single Responsibility
-Principle, Open/Closed Principle, and other relevant SOLID principles.
-
-
-Which Solid Principles i added:
+Which Solid Principles i used:
 1. Single Responsibility Principle:
     Each payment class (CreditCardPayment, PayPalPayment, BankTransferPayment) only handles one type of payment.
 2. Open/Closed Principle:

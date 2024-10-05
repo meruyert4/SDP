@@ -10,7 +10,7 @@ public class Main {
         System.out.println("2. Word Document");
 
         int choice = scanner.nextInt();
-        scanner.nextLine();  // Consume the newline
+        scanner.nextLine();
 
         switch (choice) {
             case 1:
