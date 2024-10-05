@@ -1,5 +1,3 @@
-package payments;
-
 public class PaymentProcessor {
 
     private PaymentMethod paymentMethod;

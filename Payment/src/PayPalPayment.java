@@ -1,5 +1,3 @@
-package payments;
-
 import java.util.Scanner;
 
 public class PayPalPayment implements PaymentMethod {
