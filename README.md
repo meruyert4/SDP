@@ -1,8 +1,10 @@
 # 🧑‍💻✨ Software Design Patterns - Class Assignments
 Welcome to my Software Design Patterns class assignments repository!
 
-1. Payment system
-2. Notification system
+1. Payment
+2. Notification
+3. Document
+4. GUI
 
 # 🧩 Why Use Design Patterns?
 Because they help us write better, cleaner, and more maintainable code! Each pattern solves a specific problem and helps us create reusable solutions for common challenges in software development. 🌟
