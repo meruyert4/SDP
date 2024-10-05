@@ -13,14 +13,13 @@ o EmailNotification
 o PushNotification
 
 
-Which Solid Principles i added:
+What SOLID Principles i used:
 1. Single Responsibility Principle
+    One class, one responsibility
 2. Open/Closed Principle
+    Extend without modifying
 3. Dependency Inversion Principle
+    Depend on abstractions
 
-HOW TO RUN?
-1. Open Terminal
-2. Navigate to root directory which is SDP
-3. run in terminal: javac -d out Notification/notifications/*.java Notification/main/Main.java
-4. run main: java -cp out main.Main
-5. Done
+What Design Patterns i used:
+1. Factory Method: For object creation

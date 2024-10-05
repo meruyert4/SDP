@@ -1,5 +1,3 @@
-package notifications;
-
 import java.util.List;
 
 public class EmailNotification implements Notification {

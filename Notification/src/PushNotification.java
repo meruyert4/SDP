@@ -1,11 +1,9 @@
-package notifications;
-
 import java.util.List;
 
-public class SMSNotification implements Notification {
+public class PushNotification implements Notification {
     @Override
     public void send(String recipient, String message) {
-        System.out.println("Sending SMS to " + recipient + ": " + message);
+        System.out.println("Sending Push Notification to " + recipient + ": " + message);
     }
 
     public void sendBulkNotification(List<String> recipients, String message) {
