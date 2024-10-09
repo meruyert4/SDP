@@ -2,7 +2,8 @@ Which Solid Principles i used:
 1. Single Responsibility Principle:
     Each payment class (CreditCardPayment, PayPalPayment, BankTransferPayment) only handles one type of payment.
 2. Open/Closed Principle:
-    The new payment can be added without changing the existing code.(by adding new file MethodName.java in payments directory and add its case in main)
+    The new payment can be added without changing the existing code.(by adding new file MethodName.java in payments
+    directory and add its case in main)
 3. Interface Segregation Principle:
     interface is simple and don't contain unused things
 4. Dependency Inversion Principle:

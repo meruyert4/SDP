@@ -14,6 +14,7 @@ public class Main {
         System.out.println("1. SMS");
         System.out.println("2. Email");
         System.out.println("3. Push Notification");
+        System.out.println("4. Bulk Notification");
         int choice = scanner.nextInt();
         scanner.nextLine();
 
@@ -42,6 +43,12 @@ public class Main {
                 message = scanner.nextLine();
                 pushNotification.send(recipient, message);
                 break;
+            case 4:
+                System.out.print("Enter the username: ");
+                recipient = scanner.nextLine(); // Get username
+                System.out.print("Enter your message: ");
+                message = scanner.nextLine();
+                pushNotification.send(recipient, message);
             default:
                 System.out.println("Invalid choice. Please select a valid notification type.");
         }
