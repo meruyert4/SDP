@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Command Pattern/Command Pattern.iml" filepath="$PROJECT_DIR$/Command Pattern/Command Pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/Document/Document.iml" filepath="$PROJECT_DIR$/Document/Document.iml" />
       <module fileurl="file://$PROJECT_DIR$/GUI/GUI.iml" filepath="$PROJECT_DIR$/GUI/GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Iterator Pattern/Iterator Pattern.iml" filepath="$PROJECT_DIR$/Iterator Pattern/Iterator Pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mediator Pattern/Mediator Pattern.iml" filepath="$PROJECT_DIR$/Mediator Pattern/Mediator Pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/Notification/Notification.iml" filepath="$PROJECT_DIR$/Notification/Notification.iml" />
       <module fileurl="file://$PROJECT_DIR$/Payment/Payment.iml" filepath="$PROJECT_DIR$/Payment/Payment.iml" />

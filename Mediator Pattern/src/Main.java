@@ -4,7 +4,7 @@ public class Main {
 
         EventBooking user1 = new User(eventBookingService, "Zhannur");
         EventBooking user2 = new User(eventBookingService, "Aida");
-        EventBooking user3 = new User(eventBookingService, "Alice");
+        EventBooking user3 = new User(eventBookingService, "Sana");
 
         user1.requestTicket();
         user1.cancelReservation();
