@@ -12,6 +12,7 @@ Welcome to my Software Design Patterns class assignments repository!
    1. Chain of Responsibility (with tasks)
    2. Command Pattern (with Multicooker)
    3. Mediator Pattern (with Booking Event service)
+   4. Iterator Pattern (with Clothing Store)
 
 
 # 🧩 Why Use Design Patterns?
