@@ -28,29 +28,39 @@ public class Multicooker {
         System.out.println("Ingredients added: " + ingredients);
     }
 
-    public void chooseMode(String mode){
-        this.mode = mode;
+    public void chooseMode(String mode) {
+        this.mode = mode.toLowerCase();
+        boolean validMode = false;
 
-        switch (mode.toLowerCase()){
-            case "steaming":
-                time = 15;
-                System.out.println("Steaming mode: Cooking for " + time + " minutes");
-                break;
-            case "rice":
-                time = 20;
-                System.out.println("Rice mode: Cooking for " + time + " minutes");
-                break;
-            case "baking":
-                time = 30;
-                System.out.println("Baking mode: Cooking for " + time + " minutes");
-                break;
-            case "soup":
-                time = 25;
-                System.out.println("Soup mode: Cooking for " + time + " minutes");
-                break;
-            default:
-                System.out.println("Invalid mode. Choose from steaming/rice/baking/soup");
+        while (!validMode) {
+            switch (this.mode) {
+                case "steaming":
+                    time = 15;
+                    System.out.println("Steaming mode selected. Cooking for " + time + " minutes.");
+                    validMode = true;
+                    break;
+                case "rice":
+                    time = 20;
+                    System.out.println("Rice cooking mode selected. Cooking for " + time + " minutes.");
+                    validMode = true;
+                    break;
+                case "baking":
+                    time = 30;
+                    System.out.println("Baking mode selected. Cooking for " + time + " minutes.");
+                    validMode = true;
+                    break;
+                case "soup":
+                    time = 25;
+                    System.out.println("Soup making mode selected. Cooking for " + time + " minutes.");
+                    validMode = true;
+                    break;
+                default:
+                    System.out.println("Invalid mode. Please choose a valid mode: Steaming, Rice, Baking, Soup");
+                    Scanner scanner = new Scanner(System.in);
+                    this.mode = scanner.nextLine().toLowerCase();
+            }
         }
+
         cooking(time);
     }
 
