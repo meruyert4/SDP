@@ -1,0 +1,9 @@
+booking event
+1. request to buy ticket
+2. cancel reservation
+3. request event information
+
+booking event mediator
+1. book ticket
+2. cancel reservation
+3. provide event information

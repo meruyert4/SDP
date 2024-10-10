@@ -17,7 +17,7 @@ public class Main {
         // ask the user how many tasks they want to input
         System.out.println("How many tasks you want to input? ");
         int numberOfTasks = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         // creating a list to store tasks
         List<Request> taskList = new ArrayList<>();
