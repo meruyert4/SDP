@@ -10,5 +10,8 @@ Welcome to my Software Design Patterns class assignments repository!
     2. GUI
 3. Assignment 3
    1. Chain of Responsibility (with tasks)
+   2. Command Pattern (with Multicooker)
+
+
 # 🧩 Why Use Design Patterns?
 Because they help us write better, cleaner, and more maintainable code! Each pattern solves a specific problem and helps us create reusable solutions for common challenges in software development. 🌟
