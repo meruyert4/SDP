@@ -44,9 +44,6 @@ public class Main {
             taskList.add(request);
         }
 
-        // sorting tasks
-        taskList.sort(Comparator.comparing(Request::getPriority).reversed());
-
         // processing each task
         System.out.println("\nProcessing tasks based on priority:");
         for (Request task : taskList) {
