@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Chain of Responsibility/Chain of Responsibility.iml" filepath="$PROJECT_DIR$/Chain of Responsibility/Chain of Responsibility.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Command Pattern/Command Pattern.iml" filepath="$PROJECT_DIR$/Command Pattern/Command Pattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Document/Document.iml" filepath="$PROJECT_DIR$/Document/Document.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GUI/GUI.iml" filepath="$PROJECT_DIR$/GUI/GUI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Iterator Pattern/Iterator Pattern.iml" filepath="$PROJECT_DIR$/Iterator Pattern/Iterator Pattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Mediator Pattern/Mediator Pattern.iml" filepath="$PROJECT_DIR$/Mediator Pattern/Mediator Pattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Notification/Notification.iml" filepath="$PROJECT_DIR$/Notification/Notification.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Payment/Payment.iml" filepath="$PROJECT_DIR$/Payment/Payment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment1/Assignment1.iml" filepath="$PROJECT_DIR$/Assignment1/Assignment1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment2/Assignment2.iml" filepath="$PROJECT_DIR$/Assignment2/Assignment2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment3/Assignment3.iml" filepath="$PROJECT_DIR$/Assignment3/Assignment3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment4/Assignment4.iml" filepath="$PROJECT_DIR$/Assignment4/Assignment4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment3/Chain of Responsibility/Chain of Responsibility.iml" filepath="$PROJECT_DIR$/Assignment3/Chain of Responsibility/Chain of Responsibility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment3/Command Pattern/Command Pattern.iml" filepath="$PROJECT_DIR$/Assignment3/Command Pattern/Command Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment2/Document/Document.iml" filepath="$PROJECT_DIR$/Assignment2/Document/Document.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment2/GUI/GUI.iml" filepath="$PROJECT_DIR$/Assignment2/GUI/GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment3/Iterator Pattern/Iterator Pattern.iml" filepath="$PROJECT_DIR$/Assignment3/Iterator Pattern/Iterator Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment3/Mediator Pattern/Mediator Pattern.iml" filepath="$PROJECT_DIR$/Assignment3/Mediator Pattern/Mediator Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment1/Notification/Notification.iml" filepath="$PROJECT_DIR$/Assignment1/Notification/Notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment1/Payment/Payment.iml" filepath="$PROJECT_DIR$/Assignment1/Payment/Payment.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SDP.iml" filepath="$PROJECT_DIR$/.idea/SDP.iml" />
     </modules>
   </component>
