@@ -5,11 +5,6 @@ public class OperationExpression implements Expression {
     private Expression rightExpression;
     private char operator;
 
-    public OperationExpression(Expression left, Expression right, char operator) {
-        this.leftExpression = left;
-        this.rightExpression = right;
-        this.operator = operator;
-    }
 
     @Override
     public int interpret() {

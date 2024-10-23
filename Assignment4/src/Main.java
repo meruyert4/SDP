@@ -18,7 +18,7 @@ public class Main {
             System.out.println("4. Exit");
 
             int choice = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -56,7 +56,7 @@ public class Main {
             System.out.println("Current text: " + editor.getText());
             System.out.println("Options: [1] Type [2] Undo [3] Exit");
             int action = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();
 
             switch (action) {
                 case 1:
