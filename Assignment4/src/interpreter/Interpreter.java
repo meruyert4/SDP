@@ -13,7 +13,7 @@ public class Interpreter {
         for (int i = 0; i < expression.length(); i++) {
             char currentChar = expression.charAt(i);
 
-            if (Character.isDigit(currentChar)) { //converting string to int
+            if (Character.isDigit(currentChar)) {
                 int number = 0;
                 while (i < expression.length() && Character.isDigit(expression.charAt(i))) {
                     number = number * 10 + (expression.charAt(i) - '0');
@@ -22,8 +22,7 @@ public class Interpreter {
                 i--;
                 numbers.push(number);
             }
-            // defining operations
-            else if (currentChar == '+' || currentChar == '-') {
+            else if (currentChar == '+' || currentChar == '-' || currentChar == '*' || currentChar == '/') {
                 while (!operations.isEmpty() && precedence(currentChar, operations.peek())) {
                     numbers.push(applyOperation(operations.pop(), numbers.pop(), numbers.pop()));
                 }
@@ -39,7 +38,13 @@ public class Interpreter {
     }
 
     private static boolean precedence(char currentOp, char topOp) {
-        if (topOp == '+' || topOp == '-') {
+        if ((topOp == '*' || topOp == '/') && (currentOp == '+' || currentOp == '-')) {
+            return true;
+        }
+        if ((topOp == '*' || topOp == '/') && (currentOp == '*' || currentOp == '/')) {
+            return true;
+        }
+        if ((topOp == '+' || topOp == '-') && (currentOp == '+' || currentOp == '-')) {
             return true;
         }
         return false;
@@ -51,6 +56,13 @@ public class Interpreter {
                 return a + b;
             case '-':
                 return a - b;
+            case '*':
+                return a * b;
+            case '/':
+                if (b == 0) {
+                    throw new ArithmeticException("Cannot divide by zero");
+                }
+                return a / b;
             default:
                 throw new UnsupportedOperationException("Invalid operation: " + operation);
         }
