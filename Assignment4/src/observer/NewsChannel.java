@@ -1,14 +1,20 @@
 package observer;
 
 public class NewsChannel implements Observer {
-    private String channelName;
+    private String name;
+    private String headline;
 
-    public NewsChannel(String channelName) {
-        this.channelName = channelName;
+    public NewsChannel(String name) {
+        this.name = name;
     }
 
     @Override
     public void update(String headline) {
-        System.out.println(channelName + " received headline: " + headline);
+        this.headline = headline;
+        System.out.println(name + " received the new headline: " + headline);
+    }
+
+    public String getName() {
+        return name;
     }
 }

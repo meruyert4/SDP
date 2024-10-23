@@ -11,6 +11,8 @@ public class OperationExpression implements Expression {
         switch (operator) {
             case '+': return leftExpression.interpret() + rightExpression.interpret();
             case '-': return leftExpression.interpret() - rightExpression.interpret();
+            case '*': return leftExpression.interpret() * rightExpression.interpret();
+            case '/': return leftExpression.interpret() / rightExpression.interpret();
             default: throw new UnsupportedOperationException("Invalid operator");
         }
     }

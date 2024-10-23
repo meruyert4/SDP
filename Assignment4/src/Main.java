@@ -2,6 +2,8 @@ import java.util.Scanner;
 import interpreter.*;
 import memento.*;
 import observer.*;
+import java.util.List;
+import java.util.ArrayList;
 
 
 public class Main {
@@ -83,8 +85,13 @@ public class Main {
 
     private static void runObserverPattern(Scanner scanner) {
         NewsAgency newsAgency = new NewsAgency();
-        NewsChannel channel1 = new NewsChannel("Channel 1");
-        NewsChannel channel2 = new NewsChannel("Channel 2");
+        List<NewsChannel> subscribers = new ArrayList<>();
+
+        NewsChannel channel1 = new NewsChannel("Astana");
+        NewsChannel channel2 = new NewsChannel("Khabar");
+
+        subscribers.add(channel1);
+        subscribers.add(channel2);
 
         newsAgency.addObserver(channel1);
         newsAgency.addObserver(channel2);
@@ -98,6 +105,42 @@ public class Main {
             }
 
             newsAgency.setHeadline(headline);
+
+            System.out.println("Do you want to add a new subscriber? (yes/no)");
+            String addChoice = scanner.nextLine();
+
+            if (addChoice.equalsIgnoreCase("yes")) {
+                System.out.println("Enter the name of the new channel:");
+                String newChannelName = scanner.nextLine();
+                NewsChannel newChannel = new NewsChannel(newChannelName);
+                newsAgency.addObserver(newChannel);
+                subscribers.add(newChannel);
+                System.out.println(newChannelName + " has been added as a subscriber.");
+            }
+
+            System.out.println("Do you want to remove a subscriber? (yes/no)");
+            String removeChoice = scanner.nextLine();
+
+            if (removeChoice.equalsIgnoreCase("yes")) {
+                System.out.println("Enter the name of the channel to remove:");
+                String channelToRemove = scanner.nextLine();
+
+                NewsChannel channelToDelete = null;
+                for (NewsChannel subscriber : subscribers) {
+                    if (subscriber.getName().equalsIgnoreCase(channelToRemove)) {
+                        channelToDelete = subscriber;
+                        break;
+                    }
+                }
+
+                if (channelToDelete != null) {
+                    newsAgency.removeObserver(channelToDelete);
+                    subscribers.remove(channelToDelete);
+                    System.out.println(channelToRemove + " has been removed.");
+                } else {
+                    System.out.println("Channel not found.");
+                }
+            }
         }
     }
 }

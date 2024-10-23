@@ -3,7 +3,8 @@ package observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NewsAgency implements Observable {
+
+public class NewsAgency implements Observable { //notifies all registered NewsChannel observers after new headline is set.
     private List<Observer> observers = new ArrayList<>();
     private String headline;
 
